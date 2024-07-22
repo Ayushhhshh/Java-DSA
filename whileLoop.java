@@ -9,6 +9,5 @@ class whileLoop{
             System.out.println(num+"*"+i+"="+(num*i));
             i = i + 1;
         }
-        System.out.println("");
     }
 }
