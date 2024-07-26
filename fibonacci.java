@@ -9,7 +9,7 @@ public class fibonacci {
         int term = sc.nextInt();
 
         for (int i = a; i <= term; i++) {
-            System.out.print(a+" ");
+
             int c = a+b;
             a = b;
             b = c;
