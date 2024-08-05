@@ -12,6 +12,6 @@ public class Funcsum {
         int b = sc.nextInt();
 
          int plus = sum(a, b);
-         System.out.println(plus);
+         System.out.println("Your sum is:"+plus);
     }
 }
