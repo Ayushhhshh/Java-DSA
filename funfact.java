@@ -3,16 +3,20 @@ import java.util.Scanner;
 
 public class funfact {
 
-    public static int facto(int n , int fact){
-        for (int i = 0; i <= n; i++) {
-            System.out.println(fact);
-            fact = fact * i;
-            return fact;
+    public static void facto(int n){
+        int factorial = 1;
+
+        for (int i = 1; i <= n; i++) {
+            factorial = factorial * i;
         }
+        System.out.println(factorial);
+        return;
     }
     public static void main(String []args) {
-        int fact = 1;
         Scanner sc = new Scanner (System.in);
         int n = sc.nextInt();
+
+        facto(n);
+
     }
 }
