@@ -14,9 +14,9 @@ public class searchElementInArray {
         }
 
         System.out.println("Enter the element you want to search: ");
-        int element = sc.nextInt();
+        int x = sc.nextInt();
         for (int i = 0; i < arr.length; i++) {
-           if(arr[i] == element){
+           if(arr[i] == x){
             System.out.println("This Element is at "+i+" index");
            }
         }
