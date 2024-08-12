@@ -8,7 +8,7 @@ public class removingDuplicateElementfromArrayWithNewArray {
             if(arr[i]!= arr[i+1]){
                 temp[j] = arr[i];
                 j++;
-            }
+            } 
 
         }
 
