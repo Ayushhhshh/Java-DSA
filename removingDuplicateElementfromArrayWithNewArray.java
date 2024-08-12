@@ -9,7 +9,6 @@ public class removingDuplicateElementfromArrayWithNewArray {
                 temp[j] = arr[i];
                 j++;
             } 
-
         }
 
         for (int k = 0; k < temp.length; k++) {
