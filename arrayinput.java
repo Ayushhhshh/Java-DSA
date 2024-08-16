@@ -14,9 +14,9 @@ public class arrayinput{
         }
         
         
-        //output
-        for (int i = 0; i < size; i++) {
-            System.out.print(" "+arr[i]);
-        }
+        // //output
+        // for (int i = 0; i < size; i++) {
+        //     System.out.print(" "+arr[i]);
+        // }
     }
 }
