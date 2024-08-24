@@ -11,21 +11,21 @@ public class rotateElementFromD {
             temp[j] = arr[i];
             j++;
         }
-
+        
         //shifting 
         for (int i = d; i < arr.length; i++) {
             arr[i-d] = arr[i];
         }
-
+        
         //putting temp back
         for (int i = 0; i < temp.length; i++) {
-            arr[arr.length-d-1] = temp[j];
-            j++;
+            arr[arr.length-d] = temp[i];
+            d--;
         }
 
-        //printing
+        // printing
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        System.out.println(arr[i]);
         }
     }
 }
