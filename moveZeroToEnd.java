@@ -11,8 +11,12 @@ public class moveZeroToEnd {
              }
          }
 
+         for (int i = 0; i < temp.length; i++) {
+             arr[i] = temp[i];
+         }
+
          for (int i = 0; i < arr.length; i++) {
-             System.out.println(temp[i]);
+             System.out.println(arr[i]);
          }
     }
 }
