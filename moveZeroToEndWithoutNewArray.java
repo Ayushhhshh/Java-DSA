@@ -8,7 +8,17 @@ public class moveZeroToEndWithoutNewArray {
                 j = i;
                 break;
             }
+            
         }
-        System.out.println(j);
+        for (int i = j+1; i < arr.length; i++) {
+            if(arr[i]!=0){
+                swap(arr[i],arr[j]);
+                j++;
+
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 }
