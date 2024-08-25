@@ -1,4 +1,4 @@
-public class moveZeroToEnd {
+public class moveZeroToEndWithNewArray {
     public static void main(String[] args) {
          int arr[] = {1,0,2,3,0,6,0,4,6};
          int temp[] = new int[arr.length];
@@ -11,7 +11,7 @@ public class moveZeroToEnd {
              }
          }
 
-         for (int i = 0; i < temp.length; i++) {
+         for (int i = 0; i < temp.length; i++) {               
              arr[i] = temp[i];
          }
 
