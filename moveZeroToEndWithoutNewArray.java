@@ -13,7 +13,7 @@ public class moveZeroToEndWithoutNewArray {
         }
         for (int i = j+1; i < arr.length; i++) {
             if(arr[i]!=0){
-                swapElementsIndex(arr, i, j);
+                swap(arr, i, j);
                 j++;
 
             }
@@ -22,7 +22,7 @@ public class moveZeroToEndWithoutNewArray {
             System.out.println(arr[i]);
         }
     }
-    public static void swapElementsIndex(int[] arr, int i, int j){
+    public static void swap(int[] arr, int i, int j){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
