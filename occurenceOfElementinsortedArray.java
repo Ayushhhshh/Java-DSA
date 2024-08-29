@@ -20,6 +20,6 @@ class occurenceOfElementinsortedArray {
                 count++;
             }
         }
-        System.out.println("Element is "+sec+" at index "+index+" and occurance is "+count);
+        System.out.println("Element is "+sec+" at the index "+index+" and occurance is "+count);
     }
 }
