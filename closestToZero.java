@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class closestToZero {
@@ -6,16 +5,20 @@ public class closestToZero {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int arr[] = new int[n];
-        int smallest = arr[0];
+        int closestToZero = arr[0];
 
-        for(int i =0; i < n; i++){
-            arr[i]=sc.nextInt();
+        for(int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
         }
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i]>smallest || arr[i]==0){
-                smallest = arr[i];
+
+
+
+        for(int i = 1; i < n; i++){
+            if (Math.abs(arr[i]) < Math.abs(closestToZero) || 
+                (Math.abs(arr[i]) == Math.abs(closestToZero) && arr[i] > closestToZero)) {
+                closestToZero = arr[i];
             }
         }
-        System.out.println(smallest);
-        }
+        System.out.println(closestToZero);
+    }
 }
