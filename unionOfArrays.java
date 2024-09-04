@@ -1,20 +1,21 @@
 public class unionOfArrays{
     public static void main(String[] args) {
         int arr [] = {1,1,2,3,4,5};
-        int arr2[] = {2,3,4,5};
-        int temp[] = new int [arr.length];
-        int j = 0;
-
+        int arr2[] = {2,2,3,4,5};
+        int union[] = new int [arr.length];
+        
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i]!=temp[j]){
-                temp[j]=arr[i];
-                j++;
-            }else if(temp[j]==arr[i]){
-                continue;
+            for (int j = 0; j < arr2.length; j++) {
+                if(arr[i]<=arr2[j] && union[i]!=arr[i]){
+                    union[i]=arr[i];
+                } else if(arr2[j]<arr[i] && union[i]!=arr2[j]){
+                    union[i]=arr2[j];
+                }
             }
         }
-        for (int i = 0; i < temp.length; i++) {
-            System.out.println(temp[i]);
+        
+        for (int i = 0; i < union.length; i++) {
+            System.out.println(union[i]);
         }
     }
 }
