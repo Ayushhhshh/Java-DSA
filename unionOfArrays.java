@@ -5,7 +5,7 @@ public class unionOfArrays{
         int union[] = new int [arr.length];
         
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr2.length; j++) {
+            for (int j = 1; j < arr2.length; j++) {
                 if(arr[i]<=arr2[j] && union[i]!=arr[i]){
                     union[i]=arr[i];
                 } else if(arr2[j]<arr[i] && union[i]!=arr2[j]){
