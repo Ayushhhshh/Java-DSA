@@ -7,7 +7,8 @@ public class  rotateNegative{
         for(int i = 0;i<arr.length;i++){
             if(arr[i]<0){
                 a = arr[0];
-                arr[0]=arr[i];
+                arr[0]=arr[i++];
+            
             }
         }
 
