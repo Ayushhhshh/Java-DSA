@@ -13,7 +13,7 @@ public class unionOfArrays{
                 }
             }
         }
-        for (int i = 0; i < union.length; i++) {
+        for (int i = 1; i < union.length; i++) {
             System.out.println(union[i]);
         }
     }
